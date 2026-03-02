@@ -1,0 +1,82 @@
+﻿<Window x:Class="DimmerApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Screen Dimmer" Height="420" Width="400"
+        Icon="pack://application:,,,/DimmerApp.ico"
+        Closing="Window_Closing"
+        StateChanged="Window_StateChanged">
+
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#FF2C5364" Offset="0"/>
+            <GradientStop Color="#FF0F2027" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Window.Resources>
+        <Style x:Key="PlaceholderTextBox" TargetType="TextBox">
+            <Setter Property="Foreground" Value="Gray"/>
+            <Style.Triggers>
+                <Trigger Property="Text" Value="">
+                    <Setter Property="Foreground" Value="Gray"/>
+                </Trigger>
+                <Trigger Property="IsKeyboardFocused" Value="True">
+                    <Setter Property="Foreground" Value="Black"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="10">
+        <TabControl>
+            <!-- DIMMING TAB -->
+            <TabItem Header="Dimming">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Select Display:" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <ComboBox x:Name="displaySelector" Height="25" Margin="0,0,0,10"/>
+                    <TextBlock Text="Dimming Strength:" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <Slider x:Name="dimmingSlider" Minimum="0" Maximum="100" Value="50"
+                            TickFrequency="1" IsSnapToTickEnabled="False" Margin="0,0,0,5"/>
+                    <TextBlock x:Name="dimmingValue" Text="50%" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                    <Button x:Name="applyButton" Content="Apply Dimming" Height="30" Margin="0,0,0,5"/>
+                    <Button x:Name="removeButton" Content="Remove Dimming" Height="30"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- SETTINGS TAB -->
+            <TabItem Header="Settings">
+                <StackPanel Margin="10">
+                    <CheckBox x:Name="startWithWindows" Content="Start with Windows" Margin="0,0,0,10"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- SCHEDULE TAB -->
+            <TabItem Header="Schedule">
+                <StackPanel Margin="10">
+                    <CheckBox x:Name="enableSchedule" Content="Enable Schedule" Margin="0,0,0,10"/>
+
+                    <TextBlock Text="Schedule Display:" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <ComboBox x:Name="scheduleDisplaySelector" Height="25" Margin="0,0,0,10"/>
+
+                    <TextBlock Text="Start Time (HH:MM 24h):" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <TextBox x:Name="startTimeBox" Height="25" Margin="0,0,0,10" Tag="HH:MM" 
+                             Style="{StaticResource PlaceholderTextBox}"/>
+
+                    <TextBlock Text="Stop Time (HH:MM 24h):" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <TextBox x:Name="stopTimeBox" Height="25" Margin="0,0,0,10" Tag="HH:MM" 
+                             Style="{StaticResource PlaceholderTextBox}"/>
+
+                    <TextBlock Text="Scheduled Dimming Strength:" FontWeight="Bold" Margin="0,0,0,5"/>
+                    <Slider x:Name="scheduleDimmingSlider" Minimum="0" Maximum="100" Value="50"
+                            TickFrequency="1" IsSnapToTickEnabled="False" Margin="0,0,0,5"/>
+                    <TextBlock x:Name="scheduleDimmingValue" Text="50%" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                        <Button x:Name="setScheduleButton" Content="Set Schedule" Width="120" Margin="5"/>
+                        <Button x:Name="resetScheduleButton" Content="Reset" Width="80" Margin="5"/>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "eXvAHVuzmCg=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sweyt\\Desktop\\Dimmer\\DimmerApp\\DimmerApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sweyt\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.20\\microsoft.netcore.app.runtime.win-x64.8.0.20.nupkg.sha512",
+    "C:\\Users\\sweyt\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.20\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.20.nupkg.sha512",
+    "C:\\Users\\sweyt\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.20\\microsoft.aspnetcore.app.runtime.win-x64.8.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}

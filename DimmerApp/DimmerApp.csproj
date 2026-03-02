@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>  <!-- Needed for NotifyIcon -->
+    <ApplicationIcon>DimmerApp.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+  <!-- Keep WPF resource for compile-time access -->
+  <Resource Include="DimmerApp.ico" />
+
+  <!-- Also copy icon to output/publish folder -->
+  <Content Include="DimmerApp.ico">
+    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+  </Content>
+</ItemGroup>
+
+
+</Project>

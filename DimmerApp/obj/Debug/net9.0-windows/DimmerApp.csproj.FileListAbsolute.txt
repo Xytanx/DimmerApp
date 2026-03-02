@@ -1,0 +1,10 @@
+C:\Users\sweyt\Desktop\Dimmer\DimmerApp\obj\Debug\net9.0-windows\DimmerApp.csproj.AssemblyReference.cache
+C:\Users\sweyt\Desktop\Dimmer\DimmerApp\obj\Debug\net9.0-windows\MainWindow.baml
+C:\Users\sweyt\Desktop\Dimmer\DimmerApp\obj\Debug\net9.0-windows\MainWindow.g.cs
+C:\Users\sweyt\Desktop\Dimmer\DimmerApp\obj\Debug\net9.0-windows\App.g.cs
+C:\Users\sweyt\Desktop\Dimmer\DimmerApp\obj\Debug\net9.0-windows\DimmerApp_MarkupCompile.cache
+C:\Users\sweyt\Desktop\Dimmer\DimmerApp\obj\Debug\net9.0-windows\DimmerApp.g.resources
+C:\Users\sweyt\Desktop\Dimmer\DimmerApp\obj\Debug\net9.0-windows\DimmerApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sweyt\Desktop\Dimmer\DimmerApp\obj\Debug\net9.0-windows\DimmerApp.AssemblyInfoInputs.cache
+C:\Users\sweyt\Desktop\Dimmer\DimmerApp\obj\Debug\net9.0-windows\DimmerApp.AssemblyInfo.cs
+C:\Users\sweyt\Desktop\Dimmer\DimmerApp\obj\Debug\net9.0-windows\DimmerApp.csproj.CoreCompileInputs.cache
