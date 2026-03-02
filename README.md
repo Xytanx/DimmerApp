@@ -2,8 +2,11 @@ DimmerApp is a small Windows app made mainly for laptop users who feel like the 
 It lets you dim your screen below the system minimum by adding a smooth overlay, which is especially helpful at night or in dark rooms.
 
 It also includes:
+
 -An option to start automatically with Windows
+
 -Adjustable intensity levels below the system limit
+
 -A simple scheduler to turn dimming on and off at specific times
 
 No complicated setup.
